@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="freecodecamp - surveyform.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1 id="title">Formulário</h1>
+        <p id="description">Complete com as suas informações.</p>
+    </header>
+
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Nome:</label>
+            <input id="name" type="text" placeholder="Nome" required>
+        </div>
+
+        <div>
+            <label id="email-label" for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="E-mail" required>
+        </div>
+
+        <div>
+            <label id="number-label" for="number">Idade:</label>
+            <input id="number" type="number" min="1" max="100" placeholder="Idade">
+        </div>
+
+        <div>
+            <label id="campo">Especialidade:</label>
+            <select name="role" id="dropdown">
+                <option disabled selected value="">Selecione</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <label id="campo">Senioridade:</label>
+            <label>
+                <input type="radio" name="option" value="junior">Júnior
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="pleno">Pleno
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="senior">Sênior
+            </label>
+        </fieldset>
+
+        <div>
+            <label id="campo">Tecnologias:</label>
+            <label>
+                <input type="checkbox" name="projects" value="html">HTML5
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="css">CSS3
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="javascript">JavaScript
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="c#">C#
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="c++">C++
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="python">Python
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="php">PHP
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="java">Java
+            </label>
+
+            <label>
+                <input type="checkbox" name="projects" value="ruby">Ruby
+            </label>
+        </div>
+
+        <div>
+            <label id="campo">Comentários:</label>
+            <textarea id="textarea" name="textarea" rows="3" placeholder="Escreva seu comentário aqui..."></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
